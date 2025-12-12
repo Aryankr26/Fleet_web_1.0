@@ -1,0 +1,26 @@
+﻿[
+    {
+        "path":  "build\\assets\\494a3e5749234580c611bc616000d2fd7d637deb-C5cjdoV9.png",
+        "size_kb":  1263
+    },
+    {
+        "path":  "src\\assets\\494a3e5749234580c611bc616000d2fd7d637deb.png",
+        "size_kb":  1263
+    },
+    {
+        "path":  "src\\assets\\84f2df699de86d311dc0b56820be473ca8ac952c.png",
+        "size_kb":  787.4
+    },
+    {
+        "path":  "build\\assets\\84f2df699de86d311dc0b56820be473ca8ac952c-DTnGJiBK.png",
+        "size_kb":  787.4
+    },
+    {
+        "path":  "build\\assets\\index-DoqYs8sJ.js",
+        "size_kb":  663.6
+    },
+    {
+        "path":  "package-lock.json",
+        "size_kb":  477.4
+    }
+]

@@ -1,0 +1,9 @@
+fastapi==0.95.2
+uvicorn==0.20.0
+httpx==0.23.3
+redis>=5,<6
+PyJWT>=2.9,<3
+python-dotenv==1.2.1
+python-socketio==5.11.4
+prometheus-client==0.14.1
+pytest-asyncio==0.24.0

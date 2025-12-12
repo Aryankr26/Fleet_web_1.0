@@ -1,0 +1,121 @@
+# Backend (FastAPI) – Fleet Tracking Prototype
+
+This backend ingests telemetry (Millitrack polling or simulation), publishes normalized messages to Redis channel `telemetry`, optionally stores raw telemetry in Postgres, and broadcasts updates via Socket.IO (`/socket.io`) and a plain WebSocket (`/ws`).
+
+## Quick start (Docker Compose dev)
+
+### Unix
+```sh
+cd backend
+cp .env.example .env
+# Edit .env (set MILLITRACK_TOKEN if you have one)
+docker compose -f docker-compose.dev.yml up --build
+```
+
+### PowerShell
+```powershell
+Set-Location backend
+Copy-Item .env.example .env -Force
+# Edit .env (set MILLITRACK_TOKEN if you have one)
+docker compose -f docker-compose.dev.yml up --build
+```
+
+Backend will be on: http://localhost:8000
+- Health: http://localhost:8000/health
+- Metrics: http://localhost:8000/metrics
+- Socket.IO: http://localhost:8000/socket.io
+- WebSocket: ws://localhost:8000/ws
+
+## Run locally (no Docker)
+
+### Unix
+```sh
+cd backend
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+export REDIS_ENABLED=false
+export LOG_LEVEL=info
+export POLL_INTERVAL=10
+export MILLITRACK_TOKEN=
+export DATABASE_URL=
+export SIMULATE_ON_STARTUP=true
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### PowerShell
+```powershell
+Set-Location backend
+py -3 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+$env:REDIS_ENABLED='false'
+$env:LOG_LEVEL='info'
+$env:POLL_INTERVAL='10'
+$env:MILLITRACK_TOKEN=''
+$env:DATABASE_URL=''
+$env:SIMULATE_ON_STARTUP='true'
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+## Migration (optional Postgres)
+
+Creates table `telemetry_raw`.
+
+### Unix
+```sh
+cd backend
+python -m app.models
+```
+
+### PowerShell
+```powershell
+Set-Location backend
+python -m app.models
+```
+
+If `DATABASE_URL` is not set, migration logs a warning and exits.
+
+## Simulation mode (publishes fake telemetry to Redis)
+
+### Unix
+```sh
+cd backend
+python -m app.simulate
+```
+
+### PowerShell
+```powershell
+Set-Location backend
+python -m app.simulate
+```
+
+## Alerts worker
+
+Subscribes to `telemetry` and publishes alerts to Redis channel `alerts` when fuel drops by more than `ALERT_FUEL_DROP` within `ALERT_WINDOW_SECONDS`.
+
+### Unix
+```sh
+cd backend
+python -m app.alerts_worker
+```
+
+### PowerShell
+```powershell
+Set-Location backend
+python -m app.alerts_worker
+```
+
+## Tests
+
+### Unix
+```sh
+cd backend
+pytest -q
+```
+
+### PowerShell
+```powershell
+Set-Location backend
+pytest -q
+```

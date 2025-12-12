@@ -1,0 +1,602 @@
+﻿[
+    {
+        "path":  ".gitattributes",
+        "size_kb":  0.1,
+        "type":  "gitattributes",
+        "short_description":  "File"
+    },
+    {
+        "path":  ".gitignore",
+        "size_kb":  0.2,
+        "type":  "gitignore",
+        "short_description":  "File"
+    },
+    {
+        "path":  ".vscode",
+        "size_kb":  null,
+        "type":  "dir",
+        "short_description":  "Directory"
+    },
+    {
+        "path":  ".vscode\\tasks.json",
+        "size_kb":  0.2,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "audit_file_inventory.json",
+        "size_kb":  15.5,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "audit_inventory.generated.json",
+        "size_kb":  11.4,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "audit_inventory.json",
+        "size_kb":  12.7,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "audit_map_hits.json",
+        "size_kb":  13.7,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "build",
+        "size_kb":  null,
+        "type":  "dir",
+        "short_description":  "Directory"
+    },
+    {
+        "path":  "build\\assets\\494a3e5749234580c611bc616000d2fd7d637deb-C5cjdoV9.png",
+        "size_kb":  1263,
+        "type":  "png",
+        "short_description":  "File"
+    },
+    {
+        "path":  "build\\assets\\84f2df699de86d311dc0b56820be473ca8ac952c-DTnGJiBK.png",
+        "size_kb":  787.4,
+        "type":  "png",
+        "short_description":  "File"
+    },
+    {
+        "path":  "build\\assets\\a64c707e2ad5b7f6de3ec30f2cffcba1858b49dc-ItJFHngu.png",
+        "size_kb":  4.4,
+        "type":  "png",
+        "short_description":  "File"
+    },
+    {
+        "path":  "build\\assets\\index-BGDJPuVI.css",
+        "size_kb":  69.5,
+        "type":  "css",
+        "short_description":  "File"
+    },
+    {
+        "path":  "build\\assets\\index-DoqYs8sJ.js",
+        "size_kb":  663.6,
+        "type":  "js",
+        "short_description":  "File"
+    },
+    {
+        "path":  "build\\index.html",
+        "size_kb":  0.4,
+        "type":  "html",
+        "short_description":  "File"
+    },
+    {
+        "path":  "index.html",
+        "size_kb":  0.4,
+        "type":  "html",
+        "short_description":  "File"
+    },
+    {
+        "path":  "jest.config.cjs",
+        "size_kb":  0.5,
+        "type":  "cjs",
+        "short_description":  "File"
+    },
+    {
+        "path":  "jest.setup.ts",
+        "size_kb":  0.5,
+        "type":  "ts",
+        "short_description":  "File"
+    },
+    {
+        "path":  "package.json",
+        "size_kb":  2.7,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "package-lock.json",
+        "size_kb":  477.4,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "README.md",
+        "size_kb":  0.2,
+        "type":  "md",
+        "short_description":  "File"
+    },
+    {
+        "path":  "scan-components.js",
+        "size_kb":  3.7,
+        "type":  "js",
+        "short_description":  "File"
+    },
+    {
+        "path":  "scan-components-output.json",
+        "size_kb":  9.1,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src",
+        "size_kb":  null,
+        "type":  "dir",
+        "short_description":  "Directory"
+    },
+    {
+        "path":  "src\\App.tsx",
+        "size_kb":  2.7,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\app\\_components\\DashboardLayout.test.tsx",
+        "size_kb":  3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\app\\_components\\DashboardLayout.tsx",
+        "size_kb":  4.8,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\assets\\494a3e5749234580c611bc616000d2fd7d637deb.png",
+        "size_kb":  1263,
+        "type":  "png",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\assets\\84f2df699de86d311dc0b56820be473ca8ac952c.png",
+        "size_kb":  787.4,
+        "type":  "png",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\assets\\a64c707e2ad5b7f6de3ec30f2cffcba1858b49dc.png",
+        "size_kb":  4.4,
+        "type":  "png",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\Attributions.md",
+        "size_kb":  0.3,
+        "type":  "md",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\DashboardLayout.tsx",
+        "size_kb":  8.2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\figma\\ImageWithFallback.tsx",
+        "size_kb":  1.2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\GraphicalFuelDialog.tsx",
+        "size_kb":  17.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "size_kb":  29.4,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\ComplaintsPanel.tsx",
+        "size_kb":  15.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\FuelReports.tsx",
+        "size_kb":  35.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "size_kb":  28.2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\InsightsPage.tsx",
+        "size_kb":  48.8,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\LoginPage.tsx",
+        "size_kb":  3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "size_kb":  87.3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "size_kb":  27.5,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\Settings.tsx",
+        "size_kb":  18.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "size_kb":  89,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\pages\\VehicleTracking.tsx",
+        "size_kb":  6,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\accordion.tsx",
+        "size_kb":  2.1,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\alert.tsx",
+        "size_kb":  1.7,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\alert-dialog.tsx",
+        "size_kb":  3.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\aspect-ratio.tsx",
+        "size_kb":  0.3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\avatar.tsx",
+        "size_kb":  1.1,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\badge.tsx",
+        "size_kb":  1.6,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\breadcrumb.tsx",
+        "size_kb":  2.4,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\button.tsx",
+        "size_kb":  2.1,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\calendar.tsx",
+        "size_kb":  2.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\card.tsx",
+        "size_kb":  2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\carousel.tsx",
+        "size_kb":  5.7,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\chart.tsx",
+        "size_kb":  10,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\checkbox.tsx",
+        "size_kb":  1.3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\collapsible.tsx",
+        "size_kb":  0.8,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\command.tsx",
+        "size_kb":  4.7,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\context-menu.tsx",
+        "size_kb":  8.3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\dialog.tsx",
+        "size_kb":  3.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\drawer.tsx",
+        "size_kb":  4.1,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\dropdown-menu.tsx",
+        "size_kb":  8.4,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\form.tsx",
+        "size_kb":  3.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\hover-card.tsx",
+        "size_kb":  1.5,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\input.tsx",
+        "size_kb":  1,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\input-otp.tsx",
+        "size_kb":  2.3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\label.tsx",
+        "size_kb":  0.6,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\menubar.tsx",
+        "size_kb":  8.5,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\navigation-menu.tsx",
+        "size_kb":  6.7,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\pagination.tsx",
+        "size_kb":  2.8,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\popover.tsx",
+        "size_kb":  1.7,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\progress.tsx",
+        "size_kb":  0.8,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\radio-group.tsx",
+        "size_kb":  1.5,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\resizable.tsx",
+        "size_kb":  2.1,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\scroll-area.tsx",
+        "size_kb":  1.7,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\select.tsx",
+        "size_kb":  6.3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\separator.tsx",
+        "size_kb":  0.7,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\sheet.tsx",
+        "size_kb":  4.2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\sidebar.tsx",
+        "size_kb":  21.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\skeleton.tsx",
+        "size_kb":  0.3,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\slider.tsx",
+        "size_kb":  2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\sonner.tsx",
+        "size_kb":  0.6,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\switch.tsx",
+        "size_kb":  1.2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\table.tsx",
+        "size_kb":  2.5,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\tabs.tsx",
+        "size_kb":  2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\textarea.tsx",
+        "size_kb":  0.8,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\toggle.tsx",
+        "size_kb":  1.6,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\toggle-group.tsx",
+        "size_kb":  2,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\tooltip.tsx",
+        "size_kb":  1.9,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\use-mobile.ts",
+        "size_kb":  0.6,
+        "type":  "ts",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\components\\ui\\utils.ts",
+        "size_kb":  0.2,
+        "type":  "ts",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\guidelines\\Guidelines.md",
+        "size_kb":  0,
+        "type":  "md",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\index.css",
+        "size_kb":  90.1,
+        "type":  "css",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\main.tsx",
+        "size_kb":  2.1,
+        "type":  "tsx",
+        "short_description":  "File"
+    },
+    {
+        "path":  "src\\styles\\globals.css",
+        "size_kb":  6.3,
+        "type":  "css",
+        "short_description":  "File"
+    },
+    {
+        "path":  "tsconfig.jest.json",
+        "size_kb":  0.2,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "tsconfig.json",
+        "size_kb":  0.5,
+        "type":  "json",
+        "short_description":  "File"
+    },
+    {
+        "path":  "vite.config.ts",
+        "size_kb":  3.3,
+        "type":  "ts",
+        "short_description":  "File"
+    }
+]

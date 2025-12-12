@@ -1,0 +1,410 @@
+﻿[
+    {
+        "path":  "src\\App.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.66,
+        "first_line_snippet":  "import { useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\app\\_components\\DashboardLayout.test.tsx",
+        "file_type":  "tsx",
+        "size_kb":  3.02,
+        "first_line_snippet":  "import React from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\app\\_components\\DashboardLayout.tsx",
+        "file_type":  "tsx",
+        "size_kb":  4.75,
+        "first_line_snippet":  "\u0027use client\u0027;"
+    },
+    {
+        "path":  "src\\components\\DashboardLayout.tsx",
+        "file_type":  "tsx",
+        "size_kb":  8.24,
+        "first_line_snippet":  "import { ReactNode, useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\figma\\ImageWithFallback.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.15,
+        "first_line_snippet":  "import React, { useState } from \u0027react\u0027"
+    },
+    {
+        "path":  "src\\components\\GraphicalFuelDialog.tsx",
+        "file_type":  "tsx",
+        "size_kb":  17.94,
+        "first_line_snippet":  "import { useEffect, useRef, useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "file_type":  "tsx",
+        "size_kb":  29.4,
+        "first_line_snippet":  "import { useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\ComplaintsPanel.tsx",
+        "file_type":  "tsx",
+        "size_kb":  15.92,
+        "first_line_snippet":  "import { useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\FuelReports.tsx",
+        "file_type":  "tsx",
+        "size_kb":  35.93,
+        "first_line_snippet":  "import { useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "file_type":  "tsx",
+        "size_kb":  28.2,
+        "first_line_snippet":  "import { useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\InsightsPage.tsx",
+        "file_type":  "tsx",
+        "size_kb":  48.77,
+        "first_line_snippet":  "import { useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\LoginPage.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.98,
+        "first_line_snippet":  "import { useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "file_type":  "tsx",
+        "size_kb":  87.28,
+        "first_line_snippet":  "import { useState, useEffect } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "file_type":  "tsx",
+        "size_kb":  27.54,
+        "first_line_snippet":  "import { useState } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\Settings.tsx",
+        "file_type":  "tsx",
+        "size_kb":  18.92,
+        "first_line_snippet":  "import { Card, CardContent, CardHeader, CardTitle } from \u0027../ui/card\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "file_type":  "tsx",
+        "size_kb":  88.97,
+        "first_line_snippet":  "import { useState, useEffect } from \u0027react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\VehicleTracking.tsx",
+        "file_type":  "tsx",
+        "size_kb":  6.03,
+        "first_line_snippet":  "import { Navigation, MapPin } from \u0027lucide-react\u0027;"
+    },
+    {
+        "path":  "src\\components\\ui\\accordion.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.09,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\alert.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.65,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\alert-dialog.tsx",
+        "file_type":  "tsx",
+        "size_kb":  3.93,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\aspect-ratio.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.29,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\avatar.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.14,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\badge.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.64,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\breadcrumb.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.43,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\button.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.11,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\calendar.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.93,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\card.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.03,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\carousel.tsx",
+        "file_type":  "tsx",
+        "size_kb":  5.72,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\chart.tsx",
+        "file_type":  "tsx",
+        "size_kb":  9.97,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\checkbox.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.26,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\collapsible.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.83,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\command.tsx",
+        "file_type":  "tsx",
+        "size_kb":  4.74,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\context-menu.tsx",
+        "file_type":  "tsx",
+        "size_kb":  8.32,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\dialog.tsx",
+        "file_type":  "tsx",
+        "size_kb":  3.88,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\drawer.tsx",
+        "file_type":  "tsx",
+        "size_kb":  4.12,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\dropdown-menu.tsx",
+        "file_type":  "tsx",
+        "size_kb":  8.38,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\form.tsx",
+        "file_type":  "tsx",
+        "size_kb":  3.88,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\hover-card.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.55,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\input.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.96,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\input-otp.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.32,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\label.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.63,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\menubar.tsx",
+        "file_type":  "tsx",
+        "size_kb":  8.51,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\navigation-menu.tsx",
+        "file_type":  "tsx",
+        "size_kb":  6.71,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\pagination.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.78,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\popover.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.66,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\progress.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.76,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\radio-group.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.49,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\resizable.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.06,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\scroll-area.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.67,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\select.tsx",
+        "file_type":  "tsx",
+        "size_kb":  6.33,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\separator.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.72,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\sheet.tsx",
+        "file_type":  "tsx",
+        "size_kb":  4.16,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\sidebar.tsx",
+        "file_type":  "tsx",
+        "size_kb":  21.88,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\skeleton.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.28,
+        "first_line_snippet":  "import { cn } from \"./utils\";"
+    },
+    {
+        "path":  "src\\components\\ui\\slider.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.03,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\sonner.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.59,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\switch.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.19,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\table.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.52,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\tabs.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.97,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\textarea.tsx",
+        "file_type":  "tsx",
+        "size_kb":  0.77,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\toggle.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.59,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\toggle-group.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.96,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\tooltip.tsx",
+        "file_type":  "tsx",
+        "size_kb":  1.92,
+        "first_line_snippet":  "\"use client\";"
+    },
+    {
+        "path":  "src\\components\\ui\\use-mobile.ts",
+        "file_type":  "ts",
+        "size_kb":  0.59,
+        "first_line_snippet":  "import * as React from \"react\";"
+    },
+    {
+        "path":  "src\\components\\ui\\utils.ts",
+        "file_type":  "ts",
+        "size_kb":  0.17,
+        "first_line_snippet":  "import { clsx, type ClassValue } from \"clsx\";"
+    },
+    {
+        "path":  "src\\index.css",
+        "file_type":  "css",
+        "size_kb":  90.08,
+        "first_line_snippet":  "/*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */"
+    },
+    {
+        "path":  "src\\main.tsx",
+        "file_type":  "tsx",
+        "size_kb":  2.08,
+        "first_line_snippet":  "import { createRoot } from \"react-dom/client\";"
+    },
+    {
+        "path":  "src\\styles\\globals.css",
+        "file_type":  "css",
+        "size_kb":  6.35,
+        "first_line_snippet":  "@custom-variant dark (\u0026:is(.dark *));"
+    }
+]

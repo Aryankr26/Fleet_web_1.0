@@ -1,0 +1,387 @@
+﻿[
+    {
+        "path":  "src\\app\\_components\\DashboardLayout.tsx",
+        "line":  79,
+        "text":  "          {navItems.map((item) =\u003e {"
+    },
+    {
+        "path":  "src\\components\\DashboardLayout.tsx",
+        "line":  64,
+        "text":  "      {/* Remove the map background - GeofencingPage has its own map */}"
+    },
+    {
+        "path":  "src\\components\\DashboardLayout.tsx",
+        "line":  84,
+        "text":  "          {navItems.map((item) =\u003e {"
+    },
+    {
+        "path":  "src\\components\\figma\\ImageWithFallback.tsx",
+        "line":  21,
+        "text":  "        \u003cimg src={ERROR_IMG_SRC} alt=\"Error loading image\" {...rest} data-original-url={src} /\u003e"
+    },
+    {
+        "path":  "src\\components\\figma\\ImageWithFallback.tsx",
+        "line":  25,
+        "text":  "    \u003cimg src={src} alt={alt} className={className} style={style} {...rest} onError={handleError} /\u003e"
+    },
+    {
+        "path":  "src\\components\\GraphicalFuelDialog.tsx",
+        "line":  116,
+        "text":  "    const times = currentVehicle.dataPoints.map(d =\u003e d.time);"
+    },
+    {
+        "path":  "src\\components\\GraphicalFuelDialog.tsx",
+        "line":  117,
+        "text":  "    const fuels = currentVehicle.dataPoints.map(d =\u003e d.fuel);"
+    },
+    {
+        "path":  "src\\components\\GraphicalFuelDialog.tsx",
+        "line":  222,
+        "text":  "    const points = fuels.map((fuel, i) =\u003e {"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  2,
+        "text":  "import { Building2, ChevronRight, MapPin, ArrowLeftRight, Navigation, TrendingUp, Map, Edit, X, Search, User } from \u0027lucide-react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  292,
+        "text":  "            {companies.map((company, index) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  304,
+        "text":  "                          \u003cimg src={company.logo} alt={company.name} className=\"w-full h-full object-contain\" /\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  373,
+        "text":  "                \u003cimg src={selectedCompanyData.logo} alt={selectedCompanyData.name} className=\"w-full h-full object-contain\" /\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  387,
+        "text":  "          {lenskartRoutes.map((route, index) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  408,
+        "text":  "                          \u003cMap className=\"w-3.5 h-3.5\" /\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  409,
+        "text":  "                          \u003cspan className=\"text-xs\"\u003eSee on Map\u003c/span\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  457,
+        "text":  "                          {route.stops.map((stop, idx) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  517,
+        "text":  "                      placeholder=\"Search or select on map...\""
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  526,
+        "text":  "                    {/* Grid pattern for map */}"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  555,
+        "text":  "                        \u003cp className=\"text-slate-400 text-sm\"\u003eClick on map to set starting point\u003c/p\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  583,
+        "text":  "                      placeholder=\"Search or select on map...\""
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  592,
+        "text":  "                    {/* Grid pattern for map */}"
+    },
+    {
+        "path":  "src\\components\\pages\\CompanyRoutes.tsx",
+        "line":  621,
+        "text":  "                        \u003cp className=\"text-slate-400 text-sm\"\u003eClick on map to set destination point\u003c/p\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\ComplaintsPanel.tsx",
+        "line":  183,
+        "text":  "        {summaryStats.map((stat, index) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ComplaintsPanel.tsx",
+        "line":  244,
+        "text":  "        {complaints.map((complaint) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\FuelReports.tsx",
+        "line":  343,
+        "text":  "              {vehicleStatsArray.map((vehicle: any) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\FuelReports.tsx",
+        "line":  526,
+        "text":  "              {filteredData.map((record) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "line":  110,
+        "text":  "      {/* Real Map Background */}"
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "line":  165,
+        "text":  "        {vehicles.map((vehicle) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "line":  275,
+        "text":  "              {lateVehicles.map((vehicle) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "line":  602,
+        "text":  "              {/* Map Section */}"
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "line":  606,
+        "text":  "                    Map"
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "line":  613,
+        "text":  "                {/* Map Display */}"
+    },
+    {
+        "path":  "src\\components\\pages\\GeofencingPage.tsx",
+        "line":  620,
+        "text":  "                  {/* Sample geofence circle on map */}"
+    },
+    {
+        "path":  "src\\components\\pages\\InsightsPage.tsx",
+        "line":  4,
+        "text":  "import { Search, X, MapPin, Gauge, Fuel, User, Wrench, Calendar, FileText, DollarSign, Truck, Clock, Navigation2, Activity, Edit, Trash2, Map } from \u0027lucide-react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\InsightsPage.tsx",
+        "line":  516,
+        "text":  "                  {serviceBookData.map((entry, index) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\InsightsPage.tsx",
+        "line":  670,
+        "text":  "                  \u003cMap size={18} /\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\InsightsPage.tsx",
+        "line":  671,
+        "text":  "                  See On Map"
+    },
+    {
+        "path":  "src\\components\\pages\\InsightsPage.tsx",
+        "line":  1047,
+        "text":  "                    {serviceRecords.map((record, index) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  2,
+        "text":  "import { Navigation, Circle, Power, Clock, X, Share2, Filter, Download, ChevronRight, MapPin, Gauge, Calendar, History, Shield, FileCheck, Receipt, Fuel, CircleDot, ZoomIn, ZoomOut, Maximize2, Map } from \u0027lucide-react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  650,
+        "text":  "      {/* Map Background - Constrained to left side */}"
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  654,
+        "text":  "        \u003cimg "
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  656,
+        "text":  "          alt=\"Fleet Map\""
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  877,
+        "text":  "        {/* Vehicle Icons on Map */}"
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  878,
+        "text":  "        {filteredVehicles.map((vehicle) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  1370,
+        "text":  "                      \u003cMap size={18} /\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  1371,
+        "text":  "                      See On Map"
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  1385,
+        "text":  "                {[detailVehicle].map((vehicle) =\u003e {"
+    },
+    {
+        "path":  "src\\components\\pages\\OwnerDashboard.tsx",
+        "line":  2112,
+        "text":  "              .map((vehicle) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "line":  190,
+        "text":  "                  {ignitionData.map((item, idx) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "line":  237,
+        "text":  "                  {acData.map((item, idx) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "line":  285,
+        "text":  "                  {routeTracingData.map((item, idx) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "line":  333,
+        "text":  "                  {vehicleOnOffData.map((item, idx) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "line":  385,
+        "text":  "                  {deviceOverstatedData.map((item, idx) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "line":  445,
+        "text":  "                  {maintenanceData.map((item, idx) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "line":  497,
+        "text":  "                  {geofenceData.map((item, idx) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\ReportsData.tsx",
+        "line":  559,
+        "text":  "          {reportCards.map((report, index) =\u003e {"
+    },
+    {
+        "path":  "src\\components\\pages\\Settings.tsx",
+        "line":  191,
+        "text":  "                  {users.map((user) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\Settings.tsx",
+        "line":  284,
+        "text":  "                {notificationSettings.map((setting) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\Settings.tsx",
+        "line":  368,
+        "text":  "                {telematicsConfig.map((config) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  2,
+        "text":  "import { Navigation, Circle, Power, Clock, X, Share2, Filter, Download, ChevronRight, MapPin, Gauge, Calendar, History, Shield, FileCheck, Receipt, Fuel, CircleDot, ZoomIn, ZoomOut, Maximize2, Map } from \u0027lucide-react\u0027;"
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  656,
+        "text":  "      {/* Map Background - Constrained to left side */}"
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  660,
+        "text":  "        \u003cimg "
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  662,
+        "text":  "          alt=\"Fleet Map\""
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  883,
+        "text":  "        {/* Vehicle Icons on Map */}"
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  884,
+        "text":  "        {filteredVehicles.map((vehicle) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  1376,
+        "text":  "                      \u003cMap size={18} /\u003e"
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  1377,
+        "text":  "                      See On Map"
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  2025,
+        "text":  "      {/* Vehicle Status Counter Popup - Floating Above Map */}"
+    },
+    {
+        "path":  "src\\components\\pages\\SupervisorDashboard.tsx",
+        "line":  2206,
+        "text":  "              .map((vehicle) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\VehicleTracking.tsx",
+        "line":  6,
+        "text":  "      {/* Map Grid Pattern */}"
+    },
+    {
+        "path":  "src\\components\\pages\\VehicleTracking.tsx",
+        "line":  9,
+        "text":  "          {Array.from({ length: 120 }).map((_, i) =\u003e ("
+    },
+    {
+        "path":  "src\\components\\pages\\VehicleTracking.tsx",
+        "line":  96,
+        "text":  "      {/* Map Legend */}"
+    },
+    {
+        "path":  "src\\components\\pages\\VehicleTracking.tsx",
+        "line":  127,
+        "text":  "      {/* Map Header */}"
+    },
+    {
+        "path":  "src\\components\\ui\\chart.tsx",
+        "line":  85,
+        "text":  "          .map("
+    },
+    {
+        "path":  "src\\components\\ui\\chart.tsx",
+        "line":  89,
+        "text":  "  .map(([key, itemConfig]) =\u003e {"
+    },
+    {
+        "path":  "src\\components\\ui\\chart.tsx",
+        "line":  182,
+        "text":  "        {payload.map((item, index) =\u003e {"
+    },
+    {
+        "path":  "src\\components\\ui\\chart.tsx",
+        "line":  278,
+        "text":  "      {payload.map((item) =\u003e {"
+    }
+]
