@@ -713,10 +713,7 @@ export function OwnerDashboard({ onNavigate, selectedVehicleId }: { onNavigate?:
             <div className="flex items-center gap-2">
               <button
                 onClick={() => {
-                  {
                   setStatusFilter('all');
-                  if (onNavigate && selectedVehicleId) onNavigate('dashboard');
-                };
                   if (onNavigate && selectedVehicleId) onNavigate('dashboard');
                 }}
                 className={`px-4 py-2 rounded-lg transition-all ${
@@ -733,10 +730,7 @@ export function OwnerDashboard({ onNavigate, selectedVehicleId }: { onNavigate?:
               
               <button
                 onClick={() => {
-                  {
                   setStatusFilter('moving');
-                  if (onNavigate && selectedVehicleId) onNavigate('dashboard');
-                };
                   if (onNavigate && selectedVehicleId) onNavigate('dashboard');
                 }}
                 className={`px-4 py-2 rounded-lg transition-all ${
@@ -753,10 +747,7 @@ export function OwnerDashboard({ onNavigate, selectedVehicleId }: { onNavigate?:
 
               <button
                 onClick={() => {
-                  {
                   setStatusFilter('idling');
-                  if (onNavigate && selectedVehicleId) onNavigate('dashboard');
-                };
                   if (onNavigate && selectedVehicleId) onNavigate('dashboard');
                 }}
                 className={`px-4 py-2 rounded-lg transition-all ${
@@ -773,10 +764,7 @@ export function OwnerDashboard({ onNavigate, selectedVehicleId }: { onNavigate?:
 
               <button
                 onClick={() => {
-                  {
                   setStatusFilter('stopped');
-                  if (onNavigate && selectedVehicleId) onNavigate('dashboard');
-                };
                   if (onNavigate && selectedVehicleId) onNavigate('dashboard');
                 }}
                 className={`px-4 py-2 rounded-lg transition-all ${
@@ -793,10 +781,7 @@ export function OwnerDashboard({ onNavigate, selectedVehicleId }: { onNavigate?:
 
               <button
                 onClick={() => {
-                  {
                   setStatusFilter('offline');
-                  if (onNavigate && selectedVehicleId) onNavigate('dashboard');
-                };
                   if (onNavigate && selectedVehicleId) onNavigate('dashboard');
                 }}
                 className={`px-4 py-2 rounded-lg transition-all ${
@@ -831,10 +816,7 @@ export function OwnerDashboard({ onNavigate, selectedVehicleId }: { onNavigate?:
 
               <button
                 onClick={() => {
-                  {
                   setStatusFilter('unsubscribed');
-                  if (onNavigate && selectedVehicleId) onNavigate('dashboard');
-                };
                   if (onNavigate && selectedVehicleId) onNavigate('dashboard');
                 }}
                 className={`px-4 py-2 rounded-lg transition-all ${
