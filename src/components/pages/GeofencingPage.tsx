@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
@@ -8,6 +8,7 @@ import { Badge } from '../ui/badge';
 import { Switch } from '../ui/switch';
 import { Navigation, MapPin, Clock, X, AlertCircle, CheckCircle2, Circle, Bell, Send, ZoomIn, ZoomOut, Maximize2, Plus, ChevronLeft, Search } from 'lucide-react';
 import { FleetMap } from '../FleetMap';
+import type { Map as LeafletMap } from 'leaflet';
 
 interface Vehicle {
   id: string;
@@ -36,6 +37,7 @@ export function GeofencingPage() {
   const [endTime, setEndTime] = useState('10:00');
   const [hoveredVehicle, setHoveredVehicle] = useState<string | null>(null);
   const [mapZoom, setMapZoom] = useState(11);
+  const mapRef = useRef<LeafletMap | null>(null);
   
   // Add Geofence form states
   const [geofenceName, setGeofenceName] = useState('');
@@ -100,12 +102,13 @@ export function GeofencingPage() {
           center={[28.6139, 77.209]}
           zoom={mapZoom}
           vehicles={fleetMapVehicles}
+          mapRef={mapRef}
           onZoomChange={(zoom) => setMapZoom(zoom)}
         />
       </div>
 
       {/* Top Bar */}
-      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-30">
+      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-[1200]">
         <div className="bg-white/95 backdrop-blur-sm px-8 py-4 rounded-lg shadow-xl">
           <div className="flex items-center gap-3">
             <MapPin className="h-6 w-6 text-[#10b981]" />
@@ -118,7 +121,7 @@ export function GeofencingPage() {
       </div>
 
       {/* Toggle Show Geofences */}
-      <div className="absolute top-6 right-6 z-30 flex flex-col gap-2">
+      <div className="absolute top-6 right-6 z-[1200] flex flex-col gap-2">
         <Card className="bg-white/95 backdrop-blur-sm shadow-xl">
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
@@ -146,23 +149,23 @@ export function GeofencingPage() {
       </div>
 
       {/* Zoom Controls */}
-      <div className="absolute bottom-6 right-6 flex flex-col gap-2 z-30">
+      <div className="absolute bottom-6 right-6 flex flex-col gap-2 z-[1200]">
         <button
-          onClick={() => setMapZoom(prev => Math.min(prev + 1, 18))}
+          onClick={() => mapRef.current?.zoomIn()}
           className="w-12 h-12 bg-white hover:bg-slate-50 rounded-lg shadow-lg flex items-center justify-center transition-all hover:scale-105 active:scale-95"
           title="Zoom In"
         >
           <ZoomIn className="w-5 h-5 text-slate-700" />
         </button>
         <button
-          onClick={() => setMapZoom(11)}
+          onClick={() => mapRef.current?.setZoom(11)}
           className="w-12 h-12 bg-white hover:bg-slate-50 rounded-lg shadow-lg flex items-center justify-center transition-all hover:scale-105 active:scale-95"
           title="Reset Zoom"
         >
           <Maximize2 className="w-5 h-5 text-slate-700" />
         </button>
         <button
-          onClick={() => setMapZoom(prev => Math.max(prev - 1, 3))}
+          onClick={() => mapRef.current?.zoomOut()}
           className="w-12 h-12 bg-white hover:bg-slate-50 rounded-lg shadow-lg flex items-center justify-center transition-all hover:scale-105 active:scale-95"
           title="Zoom Out"
         >
@@ -175,7 +178,7 @@ export function GeofencingPage() {
 
       {/* Late Vehicles Alert Panel - Bottom Left */}
       {lateVehicles.length > 0 && (
-        <div className="absolute bottom-6 left-6 z-30 w-96">
+        <div className="absolute bottom-6 left-6 z-[1200] w-96">
           <Card className="bg-white/95 backdrop-blur-sm shadow-xl border-2 border-red-200">
             <CardHeader className="pb-3 bg-red-50 border-b border-red-200">
               <CardTitle className="text-sm flex items-center gap-2">
@@ -331,7 +334,7 @@ export function GeofencingPage() {
       {/* Add Geofence Modal */}
       {showAddGeofence && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-[1500] flex items-center justify-center p-4"
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
           onClick={() => setShowAddGeofence(false)}
         >

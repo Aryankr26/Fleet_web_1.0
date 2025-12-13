@@ -49,6 +49,7 @@ export function FleetMap(props: {
 
   const [liveById, setLiveById] = useState<Record<string, FleetMapVehicle>>({});
   const socketRef = useRef<Socket | null>(null);
+  const mapInstanceRef = useRef<L.Map | null>(null);
 
   const backendUrl =
     props.backendUrl ??
@@ -99,15 +100,27 @@ export function FleetMap(props: {
     return Object.values(liveById);
   }, [providedVehicles, liveById]);
 
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    if (!map) return;
+    if (typeof props.zoom === "number" && map.getZoom() !== props.zoom) {
+      map.setZoom(props.zoom);
+    }
+  }, [props.zoom]);
+
   return (
-    <div className={props.className}>
+    <div
+      className={props.className}
+      style={{ position: "relative", height: "100%", width: "100%" }}
+    >
       <MapContainer
         center={center}
         zoom={zoom}
         zoomControl={false}
-        className="z-0"
+        className="absolute inset-0 z-0"
         style={{ height: "100%", width: "100%" }}
         whenCreated={(map) => {
+          mapInstanceRef.current = map;
           if (props.mapRef) props.mapRef.current = map;
           props.onZoomChange?.(map.getZoom());
           map.on("zoomend", () => props.onZoomChange?.(map.getZoom()));
