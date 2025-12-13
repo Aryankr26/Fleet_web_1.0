@@ -63,14 +63,23 @@ export function OwnerDashboard({ onNavigate, selectedVehicleId }: { onNavigate?:
   const [statusFilter, setStatusFilter] = useState<'all' | 'moving' | 'stopped' | 'idling' | 'offline' | 'geofence' | 'unsubscribed'>('all');
 
   const handleZoomIn = () => {
-    leafletMapRef.current?.zoomIn();
+    setMapZoom((prev) => {
+      const next = Math.min(prev + 1, 18);
+      leafletMapRef.current?.setZoom(next);
+      return next;
+    });
   };
 
   const handleZoomOut = () => {
-    leafletMapRef.current?.zoomOut();
+    setMapZoom((prev) => {
+      const next = Math.max(prev - 1, 3);
+      leafletMapRef.current?.setZoom(next);
+      return next;
+    });
   };
 
   const handleResetZoom = () => {
+    setMapZoom(baseZoom);
     leafletMapRef.current?.setZoom(baseZoom);
   };
 
@@ -656,7 +665,7 @@ export function OwnerDashboard({ onNavigate, selectedVehicleId }: { onNavigate?:
       >
         <FleetMap
           className="w-full h-full"
-          zoom={baseZoom}
+          zoom={mapZoom}
           mapRef={leafletMapRef}
           onZoomChange={setMapZoom}
         />
