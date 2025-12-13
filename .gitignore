@@ -4,6 +4,8 @@ node_modules/
 # build output
 build/
 dist/
+backend/data/*.db*
+backend/data/*.sqlite*
 
 # logs
 *.log

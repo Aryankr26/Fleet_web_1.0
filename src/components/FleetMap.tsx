@@ -104,6 +104,7 @@ export function FleetMap(props: {
       <MapContainer
         center={center}
         zoom={zoom}
+        zoomControl={false}
         className="z-0"
         style={{ height: "100%", width: "100%" }}
         whenCreated={(map) => {
