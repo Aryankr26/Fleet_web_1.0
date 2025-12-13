@@ -4117,7 +4117,8 @@ html {
 }
 
 /* Hide default Leaflet zoom controls so only custom controls appear */
-.leaflet-control-zoom {
+.leaflet-control-container .leaflet-control-zoom,
+.leaflet-top.leaflet-left .leaflet-control-zoom {
   display: none !important;
 }
 

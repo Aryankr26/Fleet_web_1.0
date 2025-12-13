@@ -108,6 +108,15 @@ export function FleetMap(props: {
     }
   }, [props.zoom]);
 
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    if (!map) return;
+    // Remove any default Leaflet zoom control in case it gets injected by plugins.
+    if ((map as any).zoomControl) {
+      map.removeControl((map as any).zoomControl);
+    }
+  }, []);
+
   return (
     <div
       className={props.className}
