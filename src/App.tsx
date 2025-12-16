@@ -9,6 +9,7 @@ import { ComplaintsPanel } from './components/pages/ComplaintsPanel';
 import { Settings } from './components/pages/Settings';
 import { ReportsData } from './components/pages/ReportsData';
 import { CompanyRoutes } from './components/pages/CompanyRoutes';
+import { VehicleManagementPage } from './components/pages/VehicleManagementPage';
 import { Toaster } from './components/ui/sonner';
 
 export type UserRole = 'owner' | 'supervisor' | null;
@@ -47,6 +48,8 @@ export default function App() {
         return userRole === 'owner' ? <OwnerDashboard onNavigate={handleNavigate} selectedVehicleId={selectedVehicleId} /> : <SupervisorDashboard onNavigate={handleNavigate} selectedVehicleId={selectedVehicleId} />;
       case 'vehicles':
         return <GeofencingPage />;
+      case 'vehicle-management':
+        return <VehicleManagementPage />;
       case 'fuel':
         return <FuelReports />;
       case 'complaints':
