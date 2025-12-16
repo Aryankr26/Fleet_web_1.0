@@ -200,6 +200,31 @@ class SqliteStore:
         with _DB_LOCK:
             return list(self._conn.execute("SELECT * FROM vehicles ORDER BY imei ASC").fetchall())
 
+    def get_vehicle(self, imei: str) -> Optional[Dict[str, Any]]:
+        with _DB_LOCK:
+            return self._conn.execute("SELECT * FROM vehicles WHERE imei=?", (imei,)).fetchone()
+
+    def create_vehicle(self, imei: str, label: Optional[str] = None) -> Dict[str, Any]:
+        with _DB_LOCK:
+            self._conn.execute(
+                "INSERT INTO vehicles (imei, label) VALUES (?, ?)",
+                (imei, label)
+            )
+            self._conn.commit()
+            return self.get_vehicle(imei)
+
+    def update_vehicle(self, imei: str, label: Optional[str] = None) -> Optional[Dict[str, Any]]:
+        with _DB_LOCK:
+            if label is not None:
+                self._conn.execute("UPDATE vehicles SET label=? WHERE imei=?", (label, imei))
+                self._conn.commit()
+            return self.get_vehicle(imei)
+
+    def delete_vehicle(self, imei: str) -> None:
+        with _DB_LOCK:
+            self._conn.execute("DELETE FROM vehicles WHERE imei=?", (imei,))
+            self._conn.commit()
+
     # -------------------- Geofences --------------------
     def create_geofence(self, rec: Dict[str, Any]) -> Dict[str, Any]:
         now = _utc_ms()
