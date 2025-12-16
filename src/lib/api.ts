@@ -2,6 +2,85 @@
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
+// Type definitions
+export interface User {
+  id: number;
+  username: string;
+  email?: string;
+  role: string;
+  status: string;
+  created_at_ms?: number;
+  last_login_ms?: number;
+}
+
+export interface Vehicle {
+  imei: string;
+  label?: string;
+  last_lat?: number;
+  last_lon?: number;
+  last_speed?: number;
+  last_ignition?: boolean;
+  last_fuel?: number;
+  last_seen_ms?: number;
+}
+
+export interface Geofence {
+  id: number;
+  name: string;
+  category?: string;
+  type: string;
+  center_lat?: number;
+  center_lon?: number;
+  radius_m?: number;
+  polygon?: number[][];
+  active: boolean;
+  start_time?: string;
+  end_time?: string;
+  assigned_user_id?: number;
+  created_by_user_id?: number;
+  created_at_ms?: number;
+}
+
+export interface CreateUserRequest {
+  username: string;
+  email?: string;
+  password: string;
+  role: string;
+}
+
+export interface UpdateUserRequest {
+  status?: string;
+  role?: string;
+}
+
+export interface CreateVehicleRequest {
+  imei: string;
+  label?: string;
+}
+
+export interface UpdateVehicleRequest {
+  label?: string;
+}
+
+export interface CreateGeofenceRequest {
+  name: string;
+  category?: string;
+  type: string;
+  center_lat?: number;
+  center_lon?: number;
+  radius_m?: number;
+  polygon?: number[][];
+  active?: boolean;
+  start_time?: string;
+  end_time?: string;
+}
+
+export interface LoginResponse {
+  access_token: string;
+  token_type: string;
+  role: string;
+}
+
 // Get auth token from localStorage
 const getAuthToken = (): string | null => {
   return localStorage.getItem('auth_token');
@@ -47,16 +126,16 @@ async function apiRequest<T>(
 
 // User API
 export const userApi = {
-  list: () => apiRequest<Array<any>>('/api/users'),
+  list: () => apiRequest<User[]>('/api/users'),
   
-  create: (data: { username: string; email?: string; password: string; role: string }) =>
-    apiRequest<any>('/api/users', {
+  create: (data: CreateUserRequest) =>
+    apiRequest<User>('/api/users', {
       method: 'POST',
       body: JSON.stringify(data),
     }),
   
-  update: (userId: number, data: { status?: string; role?: string }) =>
-    apiRequest<any>(`/api/users/${userId}`, {
+  update: (userId: number, data: UpdateUserRequest) =>
+    apiRequest<User>(`/api/users/${userId}`, {
       method: 'PATCH',
       body: JSON.stringify(data),
     }),
@@ -69,16 +148,16 @@ export const userApi = {
 
 // Vehicle API
 export const vehicleApi = {
-  list: () => apiRequest<Array<any>>('/api/vehicles'),
+  list: () => apiRequest<Vehicle[]>('/api/vehicles'),
   
-  create: (data: { imei: string; label?: string }) =>
-    apiRequest<any>('/api/vehicles', {
+  create: (data: CreateVehicleRequest) =>
+    apiRequest<Vehicle>('/api/vehicles', {
       method: 'POST',
       body: JSON.stringify(data),
     }),
   
-  update: (imei: string, data: { label?: string }) =>
-    apiRequest<any>(`/api/vehicles/${imei}`, {
+  update: (imei: string, data: UpdateVehicleRequest) =>
+    apiRequest<Vehicle>(`/api/vehicles/${imei}`, {
       method: 'PATCH',
       body: JSON.stringify(data),
     }),
@@ -92,10 +171,10 @@ export const vehicleApi = {
 // Geofence API
 export const geofenceApi = {
   list: (activeOnly = false) => 
-    apiRequest<Array<any>>(`/api/geofences?active=${activeOnly}`),
+    apiRequest<Geofence[]>(`/api/geofences?active=${activeOnly}`),
   
-  create: (data: any) =>
-    apiRequest<any>('/api/geofences', {
+  create: (data: CreateGeofenceRequest) =>
+    apiRequest<Geofence>('/api/geofences', {
       method: 'POST',
       body: JSON.stringify(data),
     }),
@@ -109,7 +188,7 @@ export const geofenceApi = {
 // Auth API
 export const authApi = {
   login: (username: string, password: string) =>
-    apiRequest<{ access_token: string; token_type: string; role: string }>(
+    apiRequest<LoginResponse>(
       '/api/auth/token',
       {
         method: 'POST',
