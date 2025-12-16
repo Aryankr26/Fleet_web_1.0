@@ -9,6 +9,7 @@ import { ComplaintsPanel } from './components/pages/ComplaintsPanel';
 import { Settings } from './components/pages/Settings';
 import { ReportsData } from './components/pages/ReportsData';
 import { CompanyRoutes } from './components/pages/CompanyRoutes';
+import { Toaster } from './components/ui/sonner';
 
 export type UserRole = 'owner' | 'supervisor' | null;
 
@@ -69,6 +70,7 @@ export default function App() {
       onLogout={handleLogout}
     >
       {renderPage()}
+      <Toaster />
     </DashboardLayout>
   );
 }
